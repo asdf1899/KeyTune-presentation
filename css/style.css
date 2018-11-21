@@ -39,3 +39,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   transition-duration: 1s;
   box-shadow: 0 16px 22px -6px #593b98;
 }
+.img:hover{
+  opacity: 1!important;
+}

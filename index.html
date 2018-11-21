@@ -20,15 +20,19 @@
   </head>
   <body class="style-bg">
     <main role="main">
+      <!-- id="webslides" inizio presentazione-->
       <article id="webslides">
+        <!-- ogni section è una slie -->
         <section>
           <div class="wrap">
             <div class="grid">
               <div class="column">
+                <!-- titolo -->
                 <h1 style="font-size:8vw;color:#593b98"><span style="font-family:'Quicksand';font-weight:100;">Key</span><span style="font-family:'Roboto';font-weight:100;">Tune</span></h1>
-                <h4 id="slogan" style="color:#593b98"></h4>
+                <!-- sottotitolo -->
+                <h4 id="testo" style="color:#593b98"></h4>
                 <script>
-                   var slogan = document.getElementById('slogan');
+                   var testp = document.getElementById('testp');
                    var typewriter = new Typewriter(slogan, {
                        loop: true,
                        delay:100
@@ -42,7 +46,8 @@
                       .start();
                 </script>
               </div>
-              <div class="column">
+              <!-- mockup home di keytune -->
+              <div class="column" style="background:url('svg/abstract.svg');background-repeat:no-repeat;background-size: cover;">
                 <img src="img/slide1.png" style="width:100%"></img>
               </div>
             </div>
