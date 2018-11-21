@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Anas Araid">
     <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/webslides.css" />
     <link type="text/css" rel="stylesheet" href="css/material.min.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-quicksand.css">
@@ -20,15 +21,16 @@
   <body class="style-bg">
     <div class="mdl-layout mdl-js-layout">
       <main class="mdl-layout__content">
-        <article id="webslides">
+        <article id="webslides" class="horizontal">
+          <!-- ====================   SLIDE 1   ==================== -->
           <section>
             <div class="mdl-grid">
               <div id="keytune-title" class="mdl-cell mdl-cell--6-col ">
                 <div class="style-parent">
-                  <div class="style-child">
-                    <h1 style="font-size:150px;color:#593b98"><span style="font-weight:400;">Key</span><span style="font-family:'Roboto';font-weight:100;">tune</span></h1>
+                  <div class="style-child" style="position:absolute">
+                    <h1 style="font-size:150px;color:#593b98"><span style="font-family:'Quicksand';font-weight:400;">Key</span><span style="font-family:'Roboto';font-weight:100;">tune</span></h1>
                     <h4 id="slogan" style="color:#593b98"></h4>
-                    <button class='style-button style-gradient-violet'>INIZIA</button>
+                    <button class='style-button style-gradient-violet' onclick="location.href='#slide=2'"><p style="">INIZIA</p></button>
                   </div>
                 </div>
                 <script>
@@ -54,12 +56,21 @@
               </div>
             </div>
           </section>
-        </article>
-      </main>
-      <script>
-        jQuery('keytune-title').css('height', jQuery(document).height());
-      </script>
-    </div>
+          <!-- ====================   SLIDE 2  ==================== -->
+          <section>
 
+          </secton>
+        </article>
+
+      </main>
+    </div>
+    <script src="js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides({
+        navigateOnScroll: false,
+        showIndex: true
+      });
+    </script>
+    <script defer src="js/svg-icons.js"></script>
   </body>
 </html>

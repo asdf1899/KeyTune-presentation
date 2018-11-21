@@ -11,8 +11,9 @@
 .style-bg{
   background-color: white;
 }
-body, h1, h2, h3, h4, h5, h6, p, a{
+body, h1, h2, h3, h4, h5, h6, p, a, span{
   font-family: 'Quicksand', sans-serif!important;
+  font-style:normal!important;
 }
 .style-button{
   color: white;
@@ -21,7 +22,7 @@ body, h1, h2, h3, h4, h5, h6, p, a{
   border-radius: 20px!important;
   padding: 15px;
   height: 40px;
-  width: 150px;
+  width: 200px;
   margin: 10px;
   outline: none;
 }
