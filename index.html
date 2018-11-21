@@ -10,8 +10,8 @@
     <link type="text/css" rel="stylesheet" href="css/material.min.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-quicksand.css">
+    <link rel="stylesheet" href="css/font-roboto.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,700" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="js/jquery.min.js"></script>
     <script src="js/material.js"></script>
@@ -32,8 +32,8 @@
                 <!-- sottotitolo -->
                 <h4 id="testo" style="color:#593b98"></h4>
                 <script>
-                   var testp = document.getElementById('testp');
-                   var typewriter = new Typewriter(slogan, {
+                   var testo = document.getElementById('testo');
+                   var typewriter = new Typewriter(testo, {
                        loop: true,
                        delay:100
                    });
@@ -47,9 +47,11 @@
                 </script>
               </div>
               <!-- mockup home di keytune -->
-              <div class="column" style="background:url('svg/abstract.svg');background-repeat:no-repeat;background-size: cover;">
+              <!-- SVG ANIMATO USANDO VIVUS js-->
+              <div id="svg" class="column" style="background:url('svg/abstract_animated.svg');background-repeat:no-repeat;background-size: cover;">
                 <img src="img/slide1.png" style="width:100%"></img>
               </div>
+
             </div>
           </div>
         </section>
