@@ -10,12 +10,14 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-quicksand.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,700" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="js/jquery.min.js"></script>
     <script src="js/material.js"></script>
+    <script src="js/type.js"></script>
     <script src="js/script.js"></script>
   </head>
-  <body>
+  <body class="style-bg">
     <div class="mdl-layout mdl-js-layout">
       <main class="mdl-layout__content">
         <article id="webslides">
@@ -24,12 +26,31 @@
               <div id="keytune-title" class="mdl-cell mdl-cell--6-col ">
                 <div class="style-parent">
                   <div class="style-child">
-                    <h3>Keytune</h3>
+                    <h1 style="font-size:150px;color:#593b98"><span style="font-weight:400;">Key</span><span style="font-family:'Roboto';font-weight:100;">tune</span></h1>
+                    <h4 id="slogan" style="color:#593b98"></h4>
+                    <button class='style-button style-gradient-violet'>INIZIA</button>
                   </div>
                 </div>
+                <script>
+                   var slogan = document.getElementById('slogan');
+                   var typewriter = new Typewriter(slogan, {
+                       loop: true
+                   });
+                   typewriter.typeString('Esplora, scopri ed impara...')
+                       .pauseFor(500)
+                       .deleteAll()
+                   		.typeString('In modo semplice e veloce')
+                       .pauseFor(500)
+                       .deleteAll()
+                   		.start();
+                </script>
               </div>
               <div class="mdl-cell mdl-cell--6-col">
-
+                <div class="style-parent">
+                  <div class="style-child">
+                    <img src="img/slide1.png" style="width:80%"></img>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

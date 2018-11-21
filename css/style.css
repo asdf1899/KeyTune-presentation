@@ -8,3 +8,32 @@
   vertical-align: middle!important;
   text-align: center!important;
 }
+.style-bg{
+  background-color: white;
+}
+body, h1, h2, h3, h4, h5, h6, p, a{
+  font-family: 'Quicksand', sans-serif!important;
+}
+.style-button{
+  color: white;
+  position:relative;
+  border: none;
+  border-radius: 20px!important;
+  padding: 15px;
+  height: 40px;
+  width: 150px;
+  margin: 10px;
+  outline: none;
+}
+.style-gradient-violet{
+    background: #593b98;
+    background: -webkit-linear-gradient( to left, #593b98, #B06AB3);
+    background: -moz-linear-gradient( to left, #593b98, #B06AB3);
+    background: -ms-linear-gradient( to left, #593b98, #B06AB3);
+    background: -o-linear-gradient( to left, #593b98, #B06AB3);
+    background: linear-gradient( to left , #593b98, #B06AB3);
+}
+.style-button:hover{
+  transition-duration: 1s;
+  box-shadow: 0 16px 22px -6px #593b98;
+}
