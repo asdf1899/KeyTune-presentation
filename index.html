@@ -19,55 +19,41 @@
     <script src="js/script.js"></script>
   </head>
   <body class="style-bg">
-    <div class="mdl-layout mdl-js-layout">
-      <main class="mdl-layout__content">
-        <article id="webslides" class="horizontal">
-          <!-- ====================   SLIDE 1   ==================== -->
-          <section>
-            <div class="mdl-grid">
-              <div id="keytune-title" class="mdl-cell mdl-cell--6-col ">
-                <div class="style-parent">
-                  <div class="style-child" style="position:absolute">
-                    <h1 style="font-size:150px;color:#593b98"><span style="font-family:'Quicksand';font-weight:400;">Key</span><span style="font-family:'Roboto';font-weight:100;">tune</span></h1>
-                    <h4 id="slogan" style="color:#593b98"></h4>
-                    <button class='style-button style-gradient-violet' onclick="location.href='#slide=2'"><p style="">INIZIA</p></button>
-                  <div class="style-child">
-                    <h1 style="font-size:150px;color:#593b98"><span style="font-family:'Quicksand';font-weight:400;">Key</span><span style="font-family:'Roboto';font-weight:100;">tune</span></h1>
-                    <h4 id="slogan" style="color:#593b98"></h4>
-                    <button class='style-button style-gradient-violet' onclick="location.href='#slide=2'">INIZIA</button>
-                  </div>
-                </div>
+    <main role="main">
+      <article id="webslides">
+        <section>
+          <div class="wrap">
+            <div class="grid">
+              <div class="column">
+                <h1 style="font-size:8vw;color:#593b98"><span style="font-family:'Quicksand';font-weight:100;">Key</span><span style="font-family:'Roboto';font-weight:100;">Tune</span></h1>
+                <h4 id="slogan" style="color:#593b98"></h4>
                 <script>
                    var slogan = document.getElementById('slogan');
                    var typewriter = new Typewriter(slogan, {
-                       loop: true
+                       loop: true,
+                       delay:100
                    });
                    typewriter.typeString('Esplora, scopri ed impara...')
-                       .pauseFor(500)
+                       .pauseFor(100)
                        .deleteAll()
-                   		.typeString('In modo semplice e veloce')
-                       .pauseFor(500)
+                      .typeString('In modo semplice e veloce...')
+                       .pauseFor(100)
                        .deleteAll()
-                   		.start();
+                      .start();
                 </script>
               </div>
-              <div class="mdl-cell mdl-cell--6-col">
-                <div class="style-parent">
-                  <div class="style-child">
-                    <img src="img/slide1.png" style="width:80%"></img>
-                  </div>
-                </div>
+              <div class="column">
+                <img src="img/slide1.png" style="width:100%"></img>
               </div>
             </div>
-          </section>
-          <!-- ====================   SLIDE 2  ==================== -->
-          <section>
+          </div>
+        </section>
+      </article>
+    </main>
 
-          </secton>
-        </article>
 
-      </main>
-    </div>
+
+
     <script src="js/webslides.js"></script>
     <script>
       window.ws = new WebSlides({
@@ -78,3 +64,53 @@
     <script defer src="js/svg-icons.js"></script>
   </body>
 </html>
+
+
+<!--
+
+<div class="mdl-layout mdl-js-layout">
+  <main class="mdl-layout__content">
+    <article id="webslides" class="horizontal">
+      <section>
+        <div class="mdl-grid">
+          <div id="keytune-title" class="mdl-cell mdl-cell--6-col ">
+            <div class="style-parent">
+              <div class="style-child" style="position:absolute">
+                <h1 style="font-size:150px;color:#593b98"><span style="font-family:'Quicksand';font-weight:100;">Key</span><span style="font-family:'Roboto';font-weight:100;">Tune</span></h1>
+                <h4 id="slogan" style="color:#593b98"></h4>
+                <button class='style-button style-gradient-violet' onclick="location.href='#slide=2'"><p style="">INIZIA</p></button>
+              </div>
+            </div>
+            <script>
+               var slogan = document.getElementById('slogan');
+               var typewriter = new Typewriter(slogan, {
+                   loop: true
+               });
+               typewriter.typeString('Esplora, scopri ed impara...')
+                   .pauseFor(500)
+                   .deleteAll()
+                  .typeString('In modo semplice e veloce')
+                   .pauseFor(500)
+                   .deleteAll()
+                  .start();
+            </script>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <div class="style-parent">
+              <div class="style-child">
+                <img src="img/slide1.png" style="width:80%"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+
+      </secton>
+    </article>
+
+  </main>
+</div>
+
+
+-->

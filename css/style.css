@@ -12,7 +12,7 @@
   background-color: white;
 }
 body, h1, h2, h3, h4, h5, h6, p, a, span{
-  font-family: 'Quicksand', sans-serif!important;
+  font-family: 'Quicksand', sans-serif;
   font-style:normal!important;
 }
 .style-button{
