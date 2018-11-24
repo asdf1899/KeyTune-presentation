@@ -35,6 +35,17 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
     background: -o-linear-gradient( to left, #593b98, #B06AB3);
     background: linear-gradient( to left , #593b98, #B06AB3);
 }
+.style-gradient-text{
+  background-image: #593b98;
+  background-image: -webkit-linear-gradient( to left, #593b98, #B06AB3);
+  background-image: -moz-linear-gradient( to left, #593b98, #B06AB3);
+  background-image: -ms-linear-gradient( to left, #593b98, #B06AB3);
+  background-image: -o-linear-gradient( to left, #593b98, #B06AB3);
+  background-image: linear-gradient( to left , #593b98, #B06AB3);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .style-button:hover{
   transition-duration: 1s;
   box-shadow: 0 16px 22px -6px #593b98;
