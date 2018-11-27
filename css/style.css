@@ -47,6 +47,17 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, li{
   -webkit-background-clip: text;
   background-clip: text;
 }
+.style-gradient-text2{
+  background-image: #593b98;
+  background-image: -webkit-linear-gradient( to left, #B06AB3, #593b98);
+  background-image: -moz-linear-gradient( to left, #B06AB3, #593b98);
+  background-image: -ms-linear-gradient( to left, #B06AB3, #593b98);
+  background-image: -o-linear-gradient( to left, #B06AB3, #593b98);
+  background-image: linear-gradient( to left , #B06AB3, #593b98);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .style-button:hover{
   transition-duration: 1s;
   box-shadow: 0 16px 22px -6px #593b98;
