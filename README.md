@@ -5,8 +5,6 @@ A platform to learn how to play an instrument faster and better
 ## ToDO
 
 * Improvements
-* future developments
-* Add conclusions
 
 ## Authors
 
