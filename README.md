@@ -4,8 +4,6 @@ A platform to learn how to play an instrument faster and better
 
 ## ToDO
 
-* Functionalities diagram
-* Invision mockups
 * Add heuristics
 * Improvements
 * future developments
